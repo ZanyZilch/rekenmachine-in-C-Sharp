@@ -1,0 +1,46 @@
+﻿<Window x:Class="rekenmachine_variant_true.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:rekenmachine_variant_true"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="118*"/>
+            <ColumnDefinition Width="683*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+
+        <Button Content="1" Click="num_Click" HorizontalAlignment="Left" Margin="27,334,0,0" VerticalAlignment="Top" Height="80" Width="80" x:Name="num1" FontFamily="Courier New" FontSize="72"/>
+        <Button Content="2" Click="num_Click" HorizontalAlignment="Left" Margin="117,334,0,0" VerticalAlignment="Top" Height="80" Width="80" x:Name="num2" FontFamily="Courier New" FontSize="72" Grid.ColumnSpan="2"/>
+        <Button Content="3" Click="num_Click" HorizontalAlignment="Left" Margin="90,334,0,0" VerticalAlignment="Top" Height="80" Width="80" x:Name="num3" FontFamily="Courier New" FontSize="72" Grid.Column="1"/>
+        <Button Content="4" Click="num_Click" HorizontalAlignment="Left" Margin="27,244,0,0" VerticalAlignment="Top" Height="80" Width="80" x:Name="num4" FontFamily="Courier New" FontSize="72"/>
+        <Button Content="5" Click="num_Click" HorizontalAlignment="Left" Margin="117,244,0,0" VerticalAlignment="Top" Height="80" Width="80" x:Name="num5" FontFamily="Courier New" FontSize="72" Grid.ColumnSpan="2"/>
+        <Button Content="6" Click="num_Click" HorizontalAlignment="Left" Margin="90,244,0,0" VerticalAlignment="Top" Height="80" Width="80" x:Name="num6" FontSize="72" FontFamily="Courier New" Grid.Column="1"/>
+        <Button Content="7" Click="num_Click" HorizontalAlignment="Left" Margin="27,155,0,0" VerticalAlignment="Top" Height="80" Width="80" x:Name="num7" FontSize="72" FontFamily="Courier New"/>
+        <Button Content="8" Click="num_Click" HorizontalAlignment="Left" Margin="117,155,0,0" VerticalAlignment="Top" Height="80" Width="80" x:Name="num8" FontSize="72" FontFamily="Courier New" Grid.ColumnSpan="2"/>
+        <Button Content="9" Click="num_Click" HorizontalAlignment="Left" Margin="90,155,0,0" VerticalAlignment="Top" Height="80" Width="80" x:Name="num9" FontSize="72" FontFamily="Courier New" Grid.Column="1"/>
+        <Button Content="0" Click="num_Click" HorizontalAlignment="Left" Margin="180,244,0,0" VerticalAlignment="Top" Height="80" Width="80" x:Name="num0" FontSize="72" FontFamily="Courier New" FontStyle="Normal" Grid.Column="1"/>
+
+        <Button Content="." Click="decimal_Click" HorizontalAlignment="Left" Margin="180,334,0,0" VerticalAlignment="Top" Height="80" Width="80" x:Name="Nul_Copy" FontSize="72" FontFamily="Courier New" FontStyle="Normal" Grid.Column="1"/>
+        <Button Content="*" Click="keer_Click"  HorizontalAlignment="Left" Margin="391,333,0,0" VerticalAlignment="Top" Height="80" Width="80"  FontSize="72" FontFamily="Courier New" Grid.Column="1"/>
+        <Button Content="/" Click="deel_Click" HorizontalAlignment="Left" Margin="483,333,0,0" VerticalAlignment="Top" Height="80" Width="80" FontSize="72" FontFamily="Courier New" Grid.Column="1"/>
+        <Button Content="=" Click="is_Click" HorizontalAlignment="Left"  Margin="575,332,0,0" VerticalAlignment="Top" Height="81" Width="80" FontSize="72" FontFamily="Courier New" FontStyle="Normal" Grid.Column="1"   />
+        <Button Content="+" Click="plus_Click" HorizontalAlignment="Left" Margin="391,243,0,0" VerticalAlignment="Top" Height="80" Width="80" FontSize="72" FontFamily="Courier New" Grid.Column="1"/>
+        <Button Content="-" Click="minus_Click" HorizontalAlignment="Left" Margin="483,243,0,0" VerticalAlignment="Top" Height="80" Width="80" FontSize="72" FontFamily="Courier New" Grid.Column="1"/>
+        <Button Content="%" Click="modulo_Click" HorizontalAlignment="Left" Margin="392,155,0,0" VerticalAlignment="Top" Height="80" Width="263"  FontSize="72" FontFamily="Courier New" Grid.Column="1"/>
+
+        <Button Content="CE" Click="clear_Click" HorizontalAlignment="Left" Margin="180,155,0,0" VerticalAlignment="Top"  Height="80" Width="80" FontSize="72" FontFamily="Bahnschrift Condensed" Background="#FFFFE74E" Grid.Column="1"/>
+        <Button x:Name="minmax" Content="-/+" Click="minusPlus_Click" HorizontalAlignment="Left"  Margin="575,243,0,0" VerticalAlignment="Top" Height="81" Width="80" FontSize="36" FontFamily="Courier New" FontStyle="Normal" Grid.Column="1" FontWeight="SemiBold"/>
+
+        <TextBox x:Name="TxtBox" HorizontalAlignment="Left" Margin="27,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="746" Grid.ColumnSpan="2" Height="110" FontSize="72" FontStyle="Normal" FontFamily="Segoe UI" TextAlignment="Right"/>
+
+
+
+    </Grid>
+</Window>
